@@ -12,8 +12,6 @@ RUN rpm --import /etc/pki/rpm-gpg/* \
     && yum install -y -q https://centos7.iuscommunity.org/ius-release.rpm \
     && yum update -y -q \
     && yum install -y -q git \
-    && git config --global user.name "GitLab" \
-    && git config --global user.email "<>" \
     && yum install -y -q python36u python36u-libs python36u-devel python36u-pip \
     && ln -s /usr/bin/python3.6 /usr/bin/python3 \
     && ln -s /usr/bin/pip3.6 /usr/bin/pip3 \
